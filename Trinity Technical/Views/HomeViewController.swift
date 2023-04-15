@@ -18,16 +18,16 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         
         setupNavbar()
-        
-        if let localData = readLocalFile(forName: "data") {
-            self.parse(jsonData: localData)
-        }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupCollectionView()
+        
+        if let localData = readLocalFile(forName: "data") {
+            self.parse(jsonData: localData)
+        }
     }
     
     private func setupNavbar() {
@@ -95,5 +95,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: screenSize.width/2-16, height: screenSize.width/2-16)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let contactDetailsVC: ContactDetailsViewController = ContactDetailsViewController(contactList[indexPath.row])
+        navigationController?.pushViewController(contactDetailsVC, animated: true)
     }
 }
