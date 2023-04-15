@@ -15,7 +15,7 @@ class ContactCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+         
         setupViews()
     }
     
