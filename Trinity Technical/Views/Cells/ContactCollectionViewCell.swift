@@ -19,6 +19,10 @@ class ContactCollectionViewCell: UICollectionViewCell {
         setupViews()
     }
     
+    func setupContent(contact: Contact) {
+        contactName.text = (contact.firstName ?? "")+" "+(contact.lastName ?? "")
+    }
+    
     private func setupViews() {
         containerView.layer.borderWidth = 1
         containerView.layer.borderColor = UIColor(red: 255.0/255.0, green: 140.0/255.0, blue: 0/255.0, alpha: 1.0).cgColor

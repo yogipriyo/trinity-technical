@@ -11,12 +11,17 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var contactListCollectionView: UICollectionView!
     
-    let screenSize: CGRect = UIScreen.main.bounds
+    private let screenSize: CGRect = UIScreen.main.bounds
+    private var contactList: [Contact] = []
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         setupNavbar()
+        
+        if let localData = readLocalFile(forName: "data") {
+            self.parse(jsonData: localData)
+        }
     }
 
     override func viewDidLoad() {
@@ -41,6 +46,28 @@ class HomeViewController: UIViewController {
         contactListCollectionView.register(UINib(nibName: CollectionViewCellIdentifier.contactListCellId, bundle: nil), forCellWithReuseIdentifier: CollectionViewCellIdentifier.contactListCellId)
     }
     
+    private func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
+                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                return jsonData
+            }
+        } catch {
+            displayErrorAlert(title: "Sorry!", message: "Please close the app and try again")
+        }
+        
+        return nil
+    }
+    
+    private func parse(jsonData: Data) {
+        do {
+            let decodedData = try JSONDecoder().decode([Contact].self,from: jsonData)
+            contactList = decodedData
+        } catch {
+            displayErrorAlert(title: "Sorry!", message: "Please close the app and try again")
+        }
+    }
+    
     @objc private func searchUserTapped() {
         
     }
@@ -53,7 +80,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return contactList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -61,6 +88,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             withReuseIdentifier: CollectionViewCellIdentifier.contactListCellId,
             for: indexPath
         ) as? ContactCollectionViewCell
+        cell?.setupContent(contact: contactList[indexPath.row])
         
         return cell ?? UICollectionViewCell()
     }
