@@ -1,5 +1,5 @@
 //
-//  UserDetailsViewController.swift
+//  ContactDetailsViewController.swift
 //  Trinity Technical
 //
 //  Created by Yogi Priyo Prayogo on 15/04/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserDetailsViewController: UIViewController {
+class ContactDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

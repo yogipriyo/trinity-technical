@@ -17,8 +17,11 @@
 		21C003FD29EAF1530019E9D9 /* Trinity_TechnicalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C003FC29EAF1530019E9D9 /* Trinity_TechnicalUITestsLaunchTests.swift */; };
 		21C0040C29EAF6EB0019E9D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C0040A29EAF6EB0019E9D9 /* HomeViewController.swift */; };
 		21C0040D29EAF6EB0019E9D9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C0040B29EAF6EB0019E9D9 /* HomeViewController.xib */; };
-		21C0041029EAF7040019E9D9 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C0040E29EAF7040019E9D9 /* UserDetailsViewController.swift */; };
-		21C0041129EAF7040019E9D9 /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C0040F29EAF7040019E9D9 /* UserDetailsViewController.xib */; };
+		21C0041929EAFB230019E9D9 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C0041729EAFB230019E9D9 /* ContactDetailsViewController.swift */; };
+		21C0041A29EAFB230019E9D9 /* ContactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C0041829EAFB230019E9D9 /* ContactDetailsViewController.xib */; };
+		21C0041D29EAFB3F0019E9D9 /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C0041B29EAFB3F0019E9D9 /* ContactCollectionViewCell.swift */; };
+		21C0041E29EAFB3F0019E9D9 /* ContactCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C0041C29EAFB3F0019E9D9 /* ContactCollectionViewCell.xib */; };
+		21C0042129EAFBAC0019E9D9 /* CellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C0042029EAFBAC0019E9D9 /* CellIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +56,11 @@
 		21C003FC29EAF1530019E9D9 /* Trinity_TechnicalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinity_TechnicalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		21C0040A29EAF6EB0019E9D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		21C0040B29EAF6EB0019E9D9 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		21C0040E29EAF7040019E9D9 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
-		21C0040F29EAF7040019E9D9 /* UserDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
+		21C0041729EAFB230019E9D9 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		21C0041829EAFB230019E9D9 /* ContactDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailsViewController.xib; sourceTree = "<group>"; };
+		21C0041B29EAFB3F0019E9D9 /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
+		21C0041C29EAFB3F0019E9D9 /* ContactCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCollectionViewCell.xib; sourceTree = "<group>"; };
+		21C0042029EAFBAC0019E9D9 /* CellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		21C003D529EAF1500019E9D9 /* Trinity Technical */ = {
 			isa = PBXGroup;
 			children = (
+				21C0041F29EAFB9E0019E9D9 /* Models */,
 				21C0040929EAF6D20019E9D9 /* Views */,
 				21C003D629EAF1500019E9D9 /* AppDelegate.swift */,
 				21C003D829EAF1500019E9D9 /* SceneDelegate.swift */,
@@ -136,12 +143,30 @@
 		21C0040929EAF6D20019E9D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				21C0041229EAFA5C0019E9D9 /* Cells */,
 				21C0040A29EAF6EB0019E9D9 /* HomeViewController.swift */,
 				21C0040B29EAF6EB0019E9D9 /* HomeViewController.xib */,
-				21C0040E29EAF7040019E9D9 /* UserDetailsViewController.swift */,
-				21C0040F29EAF7040019E9D9 /* UserDetailsViewController.xib */,
+				21C0041729EAFB230019E9D9 /* ContactDetailsViewController.swift */,
+				21C0041829EAFB230019E9D9 /* ContactDetailsViewController.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		21C0041229EAFA5C0019E9D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				21C0041B29EAFB3F0019E9D9 /* ContactCollectionViewCell.swift */,
+				21C0041C29EAFB3F0019E9D9 /* ContactCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		21C0041F29EAFB9E0019E9D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21C0042029EAFBAC0019E9D9 /* CellIdentifier.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21C0041129EAF7040019E9D9 /* UserDetailsViewController.xib in Resources */,
+				21C0041E29EAFB3F0019E9D9 /* ContactCollectionViewCell.xib in Resources */,
+				21C0041A29EAFB230019E9D9 /* ContactDetailsViewController.xib in Resources */,
 				21C003E629EAF1530019E9D9 /* LaunchScreen.storyboard in Resources */,
 				21C003E329EAF1530019E9D9 /* Assets.xcassets in Resources */,
 				21C0040D29EAF6EB0019E9D9 /* HomeViewController.xib in Resources */,
@@ -277,10 +303,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C0040C29EAF6EB0019E9D9 /* HomeViewController.swift in Sources */,
-				21C0041029EAF7040019E9D9 /* UserDetailsViewController.swift in Sources */,
 				21C003D729EAF1500019E9D9 /* AppDelegate.swift in Sources */,
+				21C0042129EAFBAC0019E9D9 /* CellIdentifier.swift in Sources */,
+				21C0041929EAFB230019E9D9 /* ContactDetailsViewController.swift in Sources */,
 				21C003D929EAF1500019E9D9 /* SceneDelegate.swift in Sources */,
 				21C003E129EAF1500019E9D9 /* Trinity_Technical.xcdatamodeld in Sources */,
+				21C0041D29EAFB3F0019E9D9 /* ContactCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
