@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21C003D729EAF1500019E9D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C003D629EAF1500019E9D9 /* AppDelegate.swift */; };
+		21C003D929EAF1500019E9D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C003D829EAF1500019E9D9 /* SceneDelegate.swift */; };
+		21C003DB29EAF1500019E9D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C003DA29EAF1500019E9D9 /* ViewController.swift */; };
+		21C003DE29EAF1500019E9D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C003DC29EAF1500019E9D9 /* Main.storyboard */; };
+		21C003E129EAF1500019E9D9 /* Trinity_Technical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21C003DF29EAF1500019E9D9 /* Trinity_Technical.xcdatamodeld */; };
+		21C003E329EAF1530019E9D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C003E229EAF1530019E9D9 /* Assets.xcassets */; };
+		21C003E629EAF1530019E9D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C003E429EAF1530019E9D9 /* LaunchScreen.storyboard */; };
+		21C003F129EAF1530019E9D9 /* Trinity_TechnicalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C003F029EAF1530019E9D9 /* Trinity_TechnicalTests.swift */; };
+		21C003FB29EAF1530019E9D9 /* Trinity_TechnicalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C003FA29EAF1530019E9D9 /* Trinity_TechnicalUITests.swift */; };
+		21C003FD29EAF1530019E9D9 /* Trinity_TechnicalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C003FC29EAF1530019E9D9 /* Trinity_TechnicalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21C003ED29EAF1530019E9D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21C003CB29EAF1500019E9D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21C003D229EAF1500019E9D9;
+			remoteInfo = "Trinity Technical";
+		};
+		21C003F729EAF1530019E9D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21C003CB29EAF1500019E9D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21C003D229EAF1500019E9D9;
+			remoteInfo = "Trinity Technical";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21C003D329EAF1500019E9D9 /* Trinity Technical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trinity Technical.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C003D629EAF1500019E9D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21C003D829EAF1500019E9D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		21C003DA29EAF1500019E9D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21C003DD29EAF1500019E9D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21C003E029EAF1500019E9D9 /* Trinity_Technical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trinity_Technical.xcdatamodel; sourceTree = "<group>"; };
+		21C003E229EAF1530019E9D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21C003E529EAF1530019E9D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21C003E729EAF1530019E9D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C003EC29EAF1530019E9D9 /* Trinity TechnicalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trinity TechnicalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C003F029EAF1530019E9D9 /* Trinity_TechnicalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinity_TechnicalTests.swift; sourceTree = "<group>"; };
+		21C003F629EAF1530019E9D9 /* Trinity TechnicalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trinity TechnicalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C003FA29EAF1530019E9D9 /* Trinity_TechnicalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinity_TechnicalUITests.swift; sourceTree = "<group>"; };
+		21C003FC29EAF1530019E9D9 /* Trinity_TechnicalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinity_TechnicalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21C003D029EAF1500019E9D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C003E929EAF1530019E9D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C003F329EAF1530019E9D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21C003CA29EAF1500019E9D9 = {
+			isa = PBXGroup;
+			children = (
+				21C003D529EAF1500019E9D9 /* Trinity Technical */,
+				21C003EF29EAF1530019E9D9 /* Trinity TechnicalTests */,
+				21C003F929EAF1530019E9D9 /* Trinity TechnicalUITests */,
+				21C003D429EAF1500019E9D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21C003D429EAF1500019E9D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21C003D329EAF1500019E9D9 /* Trinity Technical.app */,
+				21C003EC29EAF1530019E9D9 /* Trinity TechnicalTests.xctest */,
+				21C003F629EAF1530019E9D9 /* Trinity TechnicalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21C003D529EAF1500019E9D9 /* Trinity Technical */ = {
+			isa = PBXGroup;
+			children = (
+				21C003D629EAF1500019E9D9 /* AppDelegate.swift */,
+				21C003D829EAF1500019E9D9 /* SceneDelegate.swift */,
+				21C003DA29EAF1500019E9D9 /* ViewController.swift */,
+				21C003DC29EAF1500019E9D9 /* Main.storyboard */,
+				21C003E229EAF1530019E9D9 /* Assets.xcassets */,
+				21C003E429EAF1530019E9D9 /* LaunchScreen.storyboard */,
+				21C003E729EAF1530019E9D9 /* Info.plist */,
+				21C003DF29EAF1500019E9D9 /* Trinity_Technical.xcdatamodeld */,
+			);
+			path = "Trinity Technical";
+			sourceTree = "<group>";
+		};
+		21C003EF29EAF1530019E9D9 /* Trinity TechnicalTests */ = {
+			isa = PBXGroup;
+			children = (
+				21C003F029EAF1530019E9D9 /* Trinity_TechnicalTests.swift */,
+			);
+			path = "Trinity TechnicalTests";
+			sourceTree = "<group>";
+		};
+		21C003F929EAF1530019E9D9 /* Trinity TechnicalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21C003FA29EAF1530019E9D9 /* Trinity_TechnicalUITests.swift */,
+				21C003FC29EAF1530019E9D9 /* Trinity_TechnicalUITestsLaunchTests.swift */,
+			);
+			path = "Trinity TechnicalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21C003D229EAF1500019E9D9 /* Trinity Technical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C0040029EAF1530019E9D9 /* Build configuration list for PBXNativeTarget "Trinity Technical" */;
+			buildPhases = (
+				21C003CF29EAF1500019E9D9 /* Sources */,
+				21C003D029EAF1500019E9D9 /* Frameworks */,
+				21C003D129EAF1500019E9D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trinity Technical";
+			productName = "Trinity Technical";
+			productReference = 21C003D329EAF1500019E9D9 /* Trinity Technical.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21C003EB29EAF1530019E9D9 /* Trinity TechnicalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C0040329EAF1530019E9D9 /* Build configuration list for PBXNativeTarget "Trinity TechnicalTests" */;
+			buildPhases = (
+				21C003E829EAF1530019E9D9 /* Sources */,
+				21C003E929EAF1530019E9D9 /* Frameworks */,
+				21C003EA29EAF1530019E9D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21C003EE29EAF1530019E9D9 /* PBXTargetDependency */,
+			);
+			name = "Trinity TechnicalTests";
+			productName = "Trinity TechnicalTests";
+			productReference = 21C003EC29EAF1530019E9D9 /* Trinity TechnicalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21C003F529EAF1530019E9D9 /* Trinity TechnicalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C0040629EAF1530019E9D9 /* Build configuration list for PBXNativeTarget "Trinity TechnicalUITests" */;
+			buildPhases = (
+				21C003F229EAF1530019E9D9 /* Sources */,
+				21C003F329EAF1530019E9D9 /* Frameworks */,
+				21C003F429EAF1530019E9D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21C003F829EAF1530019E9D9 /* PBXTargetDependency */,
+			);
+			name = "Trinity TechnicalUITests";
+			productName = "Trinity TechnicalUITests";
+			productReference = 21C003F629EAF1530019E9D9 /* Trinity TechnicalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21C003CB29EAF1500019E9D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					21C003D229EAF1500019E9D9 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					21C003EB29EAF1530019E9D9 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 21C003D229EAF1500019E9D9;
+					};
+					21C003F529EAF1530019E9D9 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 21C003D229EAF1500019E9D9;
+					};
+				};
+			};
+			buildConfigurationList = 21C003CE29EAF1500019E9D9 /* Build configuration list for PBXProject "Trinity Technical" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21C003CA29EAF1500019E9D9;
+			productRefGroup = 21C003D429EAF1500019E9D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21C003D229EAF1500019E9D9 /* Trinity Technical */,
+				21C003EB29EAF1530019E9D9 /* Trinity TechnicalTests */,
+				21C003F529EAF1530019E9D9 /* Trinity TechnicalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21C003D129EAF1500019E9D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C003E629EAF1530019E9D9 /* LaunchScreen.storyboard in Resources */,
+				21C003E329EAF1530019E9D9 /* Assets.xcassets in Resources */,
+				21C003DE29EAF1500019E9D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C003EA29EAF1530019E9D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C003F429EAF1530019E9D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21C003CF29EAF1500019E9D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C003DB29EAF1500019E9D9 /* ViewController.swift in Sources */,
+				21C003D729EAF1500019E9D9 /* AppDelegate.swift in Sources */,
+				21C003D929EAF1500019E9D9 /* SceneDelegate.swift in Sources */,
+				21C003E129EAF1500019E9D9 /* Trinity_Technical.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C003E829EAF1530019E9D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C003F129EAF1530019E9D9 /* Trinity_TechnicalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C003F229EAF1530019E9D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C003FD29EAF1530019E9D9 /* Trinity_TechnicalUITestsLaunchTests.swift in Sources */,
+				21C003FB29EAF1530019E9D9 /* Trinity_TechnicalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21C003EE29EAF1530019E9D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21C003D229EAF1500019E9D9 /* Trinity Technical */;
+			targetProxy = 21C003ED29EAF1530019E9D9 /* PBXContainerItemProxy */;
+		};
+		21C003F829EAF1530019E9D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21C003D229EAF1500019E9D9 /* Trinity Technical */;
+			targetProxy = 21C003F729EAF1530019E9D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21C003DC29EAF1500019E9D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21C003DD29EAF1500019E9D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21C003E429EAF1530019E9D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21C003E529EAF1530019E9D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21C003FE29EAF1530019E9D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21C003FF29EAF1530019E9D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21C0040129EAF1530019E9D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPU4US8598;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Trinity Technical/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trinity.ios.technical.yogipriyo.Trinity-Technical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21C0040229EAF1530019E9D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPU4US8598;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Trinity Technical/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trinity.ios.technical.yogipriyo.Trinity-Technical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21C0040429EAF1530019E9D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPU4US8598;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trinity.ios.technical.yogipriyo.Trinity-TechnicalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trinity Technical.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trinity Technical";
+			};
+			name = Debug;
+		};
+		21C0040529EAF1530019E9D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPU4US8598;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trinity.ios.technical.yogipriyo.Trinity-TechnicalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trinity Technical.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trinity Technical";
+			};
+			name = Release;
+		};
+		21C0040729EAF1530019E9D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPU4US8598;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trinity.ios.technical.yogipriyo.Trinity-TechnicalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Trinity Technical";
+			};
+			name = Debug;
+		};
+		21C0040829EAF1530019E9D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPU4US8598;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trinity.ios.technical.yogipriyo.Trinity-TechnicalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Trinity Technical";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21C003CE29EAF1500019E9D9 /* Build configuration list for PBXProject "Trinity Technical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C003FE29EAF1530019E9D9 /* Debug */,
+				21C003FF29EAF1530019E9D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C0040029EAF1530019E9D9 /* Build configuration list for PBXNativeTarget "Trinity Technical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C0040129EAF1530019E9D9 /* Debug */,
+				21C0040229EAF1530019E9D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C0040329EAF1530019E9D9 /* Build configuration list for PBXNativeTarget "Trinity TechnicalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C0040429EAF1530019E9D9 /* Debug */,
+				21C0040529EAF1530019E9D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C0040629EAF1530019E9D9 /* Build configuration list for PBXNativeTarget "Trinity TechnicalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C0040729EAF1530019E9D9 /* Debug */,
+				21C0040829EAF1530019E9D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21C003DF29EAF1500019E9D9 /* Trinity_Technical.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21C003E029EAF1500019E9D9 /* Trinity_Technical.xcdatamodel */,
+			);
+			currentVersion = 21C003E029EAF1500019E9D9 /* Trinity_Technical.xcdatamodel */;
+			path = Trinity_Technical.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 21C003CB29EAF1500019E9D9 /* Project object */;
+}
