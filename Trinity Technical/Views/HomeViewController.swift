@@ -76,11 +76,14 @@ class HomeViewController: UIViewController {
     }
     
     @objc private func searchUserTapped() {
-        
+        // I will create a dedicated page for search feature screen and inject all of the contact array into that page
+        // I will add the text field, setup delegate to recognise when the user type in
+        // get the text field value, then filter the array and display the filtered array as the contact list located below the search text field.
     }
     
     @objc private func addUserTapped() {
-        // the add user are pretty much the same like the save contact data on the contact details page
+        // I will create a dedicated page for the add user feature screen and add content like the contact details page
+        // the add user is pretty much the same like the save contact data on the contact details page
         // to do it properly, need to have some kind of data store which unfortunately, I am not able to do it within 2 hours timeframe.
     }
 }
