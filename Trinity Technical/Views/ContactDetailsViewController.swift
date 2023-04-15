@@ -82,7 +82,12 @@ class ContactDetailsViewController: UIViewController {
     }
     
     @objc private func saveTapped() {
-        
+        // to do it properly for the update list when going back from this screen, there should be a data store that is independent.
+        // much like redux concept. so this function will update the data on the store using action or anything similar.
+        // then set the homepage to prioritize getting the data from that data store and put the getting data from json file to the
+        // second priority when the data store is empty
+        // then implement the pull to refresh on the collection view to get the data from the json file again
+        // I can do that but unfortunately not within the 2 hours timeframe
     }
 
 }

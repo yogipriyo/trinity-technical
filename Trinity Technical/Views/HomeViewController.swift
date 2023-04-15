@@ -25,9 +25,7 @@ class HomeViewController: UIViewController {
 
         setupCollectionView()
         
-        if let localData = readLocalFile(forName: "data") {
-            self.parse(jsonData: localData)
-        }
+        setupData()
     }
     
     private func setupNavbar() {
@@ -44,6 +42,15 @@ class HomeViewController: UIViewController {
         contactListCollectionView.delegate = self
         contactListCollectionView.dataSource = self
         contactListCollectionView.register(UINib(nibName: CollectionViewCellIdentifier.contactListCellId, bundle: nil), forCellWithReuseIdentifier: CollectionViewCellIdentifier.contactListCellId)
+    }
+    
+    private func setupData() {
+        // these data fetching procedure should be taken out of this view controller. Put it into the view model and another independent utilities
+        // then call those utilities inside the view model and trigger the changes on the UI via delegation or reactive (RXSwift/Combine/etc)
+        
+        if let localData = readLocalFile(forName: "data") {
+            self.parse(jsonData: localData)
+        }
     }
     
     private func readLocalFile(forName name: String) -> Data? {
@@ -73,7 +80,8 @@ class HomeViewController: UIViewController {
     }
     
     @objc private func addUserTapped() {
-        
+        // the add user are pretty much the same like the save contact data on the contact details page
+        // to do it properly, need to have some kind of data store which unfortunately, I am not able to do it within 2 hours timeframe.
     }
 }
 
