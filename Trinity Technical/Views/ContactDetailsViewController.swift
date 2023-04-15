@@ -38,11 +38,31 @@ class ContactDetailsViewController: UIViewController {
         // Based on the design, the contact form can be built by using table view that has section but for the sake of saving time in this test and the low number of the fields, it will be much quicker to do it manually
         
         setupContent()
+        setupViews()
+    }
+    
+    private func switchBasedNextTextField(_ textField: UITextField) {
+        switch textField {
+        case self.firstNameTextField:
+            self.lastNameTextField.becomeFirstResponder()
+        case self.lastNameTextField:
+            self.emailTextField.becomeFirstResponder()
+        case self.emailTextField:
+            self.dobTextField.becomeFirstResponder()
+        default:
+            self.firstNameTextField.resignFirstResponder()
+        }
+    }
+    
+    private func setupViews() {
+        contactImage.tintColor = UIColor(red: 255.0/255.0, green: 140.0/255.0, blue: 0/255.0, alpha: 1.0)
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
+        emailTextField.delegate = self
+        dobTextField.delegate = self
     }
     
     private func setupContent() {
-        
-        contactImage.tintColor = UIColor(red: 255.0/255.0, green: 140.0/255.0, blue: 0/255.0, alpha: 1.0)
         firstNameTextField.text = contact.firstName
         lastNameTextField.text = contact.lastName
         emailTextField.text = contact.email
@@ -65,4 +85,11 @@ class ContactDetailsViewController: UIViewController {
         
     }
 
+}
+
+extension ContactDetailsViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.switchBasedNextTextField(textField)
+        return true
+    }
 }
